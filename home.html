@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Food Donation | Home</title>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.top-nav {
+    width: 100%;
+    background: rgb(255, 189, 7);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-nav img {
+    height: 60px;
+}
+
+.top-nav .right-links {
+    margin-left: auto;
+}
+
+.top-nav .right-links a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 20px;
+    font-size: 18px;
+}
+
+.top-nav a:hover {
+    background: #ff9900;
+}
+
+
+.main-nav {
+    width: 100%;
+    background: #ffa31a;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 18px 30px;
+    font-size: 20px;
+    display: block;
+}
+
+.main-nav a:hover {
+    background: #ff8800;
+}
+
+
+.hero-section {
+    width: 100vw;
+    height: 450px; 
+    background-image: url("https://images.moneycontrol.com/static-mcnews/2021/06/Malnourished-child-770x433.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    color: white;
+}
+
+
+.hero-heading {
+    font-size: 45px;
+    width: 50%;
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+.hero-text {
+    margin-top: 20px;
+    font-size: 24px;
+    width: 60%;
+    animation: fadeUp 2.5s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.sdg-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff1d0;
+}
+
+.sdg-section img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.sdg-section p {
+    width: 70%;
+    margin: auto;
+    font-size: 22px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ffcc63;
+    margin-top: 40px;
+}
+@media screen and (max-width: 800px) {
+    body {
+        width: 300px;
+        height: 380px;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="top-nav">
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/Home.html">
+        <img src="https://static.vecteezy.com/system/resources/previews/050/524/067/non_2x/the-logo-for-the-rice-industry-free-png.png" alt="Logo">
+    </a>
+
+    <div class="right-links">
+        <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/BecomeAVolunteer.html">Become a Volunteer</a>
+        <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/donation.html?">Donate</a>
+    </div>
+</div>
+
+
+<div class="main-nav">
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/ourteam2.html">Our Team</a>
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/Event.html">Event</a>
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/Gallery.html">Gallery</a>
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/contact.html">Contact</a>
+</div>
+
+
+<section class="hero-section">
+    <h1 class="hero-heading">
+        Your support brings hope and nourishment to those in need.
+    </h1>
+
+    <p class="hero-text">
+        We aim to eradicate hunger by delivering meals, supporting communities, 
+        and creating opportunities for a brighter future.
+    </p>
+</section>
+
+
+<section class="sdg-section">
+    <h2>Related: SDG 2 – Zero Hunger</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sustainable_Development_Goal_02ZeroHunger.svg/1200px-Sustainable_Development_Goal_02ZeroHunger.svg.png" 
+         alt="SDG 2">
+
+    <p>
+        SDG 2 aims to end hunger, achieve food security, and improve nutrition. 
+        Despite global efforts, millions still face starvation due to poverty, conflict, 
+        climate change, and inequality. Together, we can create a hunger-free world.
+    </p>
+</section>
+
+
+<footer>
+    © 2025 Food Donation Initiative. All Rights Reserved.
+</footer>
+
+</body>
+</html>

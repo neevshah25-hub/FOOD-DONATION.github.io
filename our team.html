@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Team & What We Do</title>
+
+<style>
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnim 1.2s ease-out forwards;
+}
+
+@keyframes fadeInAnim {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: basicHeading 1.5s ease-out forwards;
+}
+
+@keyframes basicHeading {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.team-member {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: riseUp 1s ease-out forwards;
+}
+
+.team-member:nth-child(1) { animation-delay: 0.3s; }
+.team-member:nth-child(2) { animation-delay: 0.5s; }
+.team-member:nth-child(3) { animation-delay: 0.7s; }
+.team-member:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes riseUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.team-member:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 189, 7);
+    display: flex;
+    align-items: center;
+}
+ul li {
+    margin-right: 20px;
+}
+ul li a {
+    display: block;
+    padding: 20px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+ul li a:hover {
+    background-color: #ff9900;
+}
+
+
+header {
+    background: rgb(255, 189, 7);
+    padding: 40px 20px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.what-we-do {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.what-we-do h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.team {
+    margin-top: 50px;
+}
+.team h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background: powderblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: rgb(255, 189, 7);
+}
+
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .team-member img {
+        width: 90px;
+        height: 90px;
+    }
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+    <li><a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/Home.html"><img src="https://static.vecteezy.com/system/resources/previews/050/524/067/non_2x/the-logo-for-the-rice-industry-free-png.png" width="100" height="50"></a></li>
+    <li style="margin-left:auto;"><a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/BecomeAVolunteer.html">Become a volunteer</a></li>
+    <li><a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/donation.html?">Donate</a></li>
+</ul>
+
+
+<ul>
+    <li><a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/Home.html">Home</a></li>
+    <li><a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/Event.html">Events</a></li>
+    <li><a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/ourteam2.html">Our Team</a></li>
+    <li><a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/contact.html">Contacts</a></li>
+</ul>
+
+
+<header>
+<h1>Working together to fight hunger and reduce food waste</h1>
+</header>
+
+<section>
+
+
+<div class="what-we-do">
+    <h2><u>What We Do</u></h2>
+    <p style="font-size:20px;">
+        We collect surplus food from restaurants, grocery stores, farms, and community partners, 
+        then distribute it to shelters, food banks, and families in need. Our mission is to make 
+        sure good food never goes to waste and that every person has access to safe and nutritious 
+        meals. Through community events, volunteer programs, and partnerships, we help individuals 
+        and businesses support hunger-relief efforts.
+
+        <br><br>
+
+        Our organisation bridges the gap between food surplus and scarcity. We partner with growers, 
+        retailers, and community groups to recover edible food that would otherwise be discarded. 
+        After sorting and storage, this food is distributed to shelters, food banks, schools, and community centres.
+
+        <br><br>
+
+        We also run awareness programs on food waste, sustainability, and hunger relief—building 
+        a food system where access, dignity, and sustainability go hand in hand.
+    </p>
+</div>
+
+
+<div class="team">
+<h2><u>Meet Our Team</u></h2>
+
+<div class="team-grid">
+
+    <div class="team-member">
+        <img src="https://via.placeholder.com/120" alt="Team Member">
+        <h3>Shubham Sawant</h3>
+        <p><strong>Founder & Director</strong></p>
+        <p>Leads our mission and builds partnerships to expand impact.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="https://via.placeholder.com/120" alt="Team Member">
+        <h3>Ruhi Sheth</h3>
+        <p><strong>Operations Manager</strong></p>
+        <p>Oversees food collection, storage, and distribution.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="https://via.placeholder.com/120" alt="Team Member">
+        <h3>Neev Shah</h3>
+        <p><strong>Volunteer Coordinator</strong></p>
+        <p>Manages volunteers and community programs.</p>
+    </div>
+
+    <div class="team-member">
+        <img src="https://via.placeholder.com/120" alt="Team Member">
+        <h3>Rajvi Shah</h3>
+        <p><strong>Community Promotion Lead</strong></p>
+        <p>Builds awareness and connects with local groups.</p>
+    </div>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+<h2>Feed hope, Fight hunger!</h2>
+</footer>
+
+</body>
+</html>

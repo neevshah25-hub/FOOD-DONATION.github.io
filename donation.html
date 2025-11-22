@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Donation</title>
+
+<style>
+
+
+
+.top-nav {
+    width: 100%;
+    background: rgb(255, 189, 7);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-nav img {
+    height: 60px;
+}
+
+.top-nav .right-links {
+    margin-left: auto;
+}
+
+.top-nav .right-links a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 20px;
+    font-size: 18px;
+}
+
+.top-nav a:hover {
+    background: #ff9900;
+}
+
+
+
+.main-nav {
+    width: 100%;
+    background: #ffa31a;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 18px 30px;
+    font-size: 20px;
+    display: block;
+}
+
+.main-nav a:hover {
+    background: #ff8800;
+}
+
+
+
+.header {
+    text-align: center;
+    background-color: #ffcc33;
+    padding: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    animation: fadeDown 1s ease;
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.donate-container {
+    width: 70%;
+    margin: 40px auto;
+    background: rgba(255, 240, 200, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    border: 4px solid #cc7a00;
+    box-shadow: 0 0 10px #b36b00;
+}
+
+.donate-container h2 {
+    text-align: center;
+    color: #b36b00;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #804d00;
+    font-size: 18px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #cc8800;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    height: 120px;
+    border: 2px solid #cc8800;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+
+button {
+    background: #ffa31a;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: #ff8800;
+}
+
+
+
+.info-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffe6b3;
+    border-left: 6px solid #cc7a00;
+    border-radius: 10px;
+}
+
+.info-box p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+@media screen and (max-width: 800px) {
+    body {
+        width: 300px;
+        height: 380px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="top-nav">
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/Home.html"><img src="https://static.vecteezy.com/system/resources/previews/050/524/067/non_2x/the-logo-for-the-rice-industry-free-png.png" alt="Logo"></a>
+
+    <div class="right-links">
+        <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/BecomeAVolunteer.html">Become a Volunteer</a>
+        <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/donation.html?">Donation</a>
+    </div>
+</div>
+
+
+<div class="main-nav">
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/ourteam2.html">Our Team</a>
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/Event.html">Events</a>
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/Gallery.html">Gallery</a>
+    <a href="file:///C:/Users/Sanket%20sawant/Documents/Shubham/Miniproject/contact.html">Contact</a>
+</div>
+
+
+<div class="header">
+    Make a Donation
+</div>
+
+
+<div class="donate-container">
+    <h2>Your Contribution Can Change Lives</h2>
+
+    <form>
+
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Your Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter your phone number">
+
+        <label>Donation Type</label>
+        <select required>
+            <option disabled selected>Select a type</option>
+            <option>Monetary Donation</option>
+            <option>Food Grains</option>
+            <option>Fruits & Vegetables</option>
+            <option>Prepared Food</option>
+            <option>Cooked Meal Sponsorship</option>
+        </select>
+
+        <label>Amount (if Monetary)</label>
+        <input type="number" placeholder="Enter amount (optional)">
+
+        <label>Message / Notes</label>
+        <textarea placeholder="Any special instructions..."></textarea>
+
+        <button type="submit">Donate Now</button>
+
+    </form>
+
+
+    <div class="info-box">
+        <p><strong>UPI ID:</strong> fooddonation@upi</p>
+        <p><strong>Bank:</strong> Food Donation Trust</p>
+        <p><strong>Account No:</strong> 123456789000</p>
+        <p><strong>IFSC:</strong> ABCD0123456</p>
+        <p><strong>Support:</strong> donationhelp@gmail.com | +91 98765 43210</p>
+    </div>
+
+</div>
+
+</body>
+</html>
